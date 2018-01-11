@@ -7,17 +7,47 @@
     <meta name="description" content="Perceptron">
     <meta name="author" content="Thomio Watanabe">
     <link rel="stylesheet" type="text/css" href="../style/deeplibs.css">
+<!--    https://www.mathjax.org-->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
 </head>
 
 <body>
-    <div id="container">
-        <h1>Perceptron<br><br></h1>
+    <article>
+        <h1>Perceptron</h1>
 
-        <p>Hello world.</p>
-    </div>
-    <div id="copyright">
-        Copyright &copy; Thomio Watanabe
-    </div>
+        <br>
+
+        <p>
+        The perceptron tries to mathematicaly represent a neuron.
+        Nowadays we know it is far from representing a real neuron but neural
+        networks are built with a combination of several perceptrons
+        (and much more).
+        </p>
+
+        <p>
+        Anyway, to completely understand neural networks it is important to
+        study the perceptron and understand what they represent.
+        </p>
+
+        <p>
+        The perceptron is defined according to the following function:
+        $$ f(x) = \sum_{i=1}^{N} { w_{i} x_{i} } $$
+        It represents the summation of \(N\) inputs \(x\) multiplied by \(N\) weights \(w\).
+        The perceptron is usualy represented by the figure below.
+        </p>
+
+        <figure>
+            <img src="../figures/perceptron.png" align="middle"
+            alt="perceptron representation" width="500" height="250" style="padding: 10px">
+<!--            <figcaption align="middle">Perceptron block diagram.</figcaption>-->
+        </figure>
+
+    </article>
+
+    <footer><br>Copyright &copy; Thomio Watanabe</footer>
+
 </body>
 
 </html>

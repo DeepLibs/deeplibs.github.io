@@ -7,12 +7,50 @@ ol, p{
     font-size: large
 }
 
+h1{
+    font-size: 2em;
+}
+
+a:link{
+  text-decoration: none;
+  color: blue;
+}
+
+/*----------------------------------------------------------------------------*/
+
+header{
+    padding: 1em;
+    clear: left;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+article{
+    margin-left: 27%;
+    margin-right: 31%;
+    padding: 1em;
+    overflow: hidden;
+}
+
+footer{
+    padding: 1em;
+    clear: left;
+    text-align: center;
+}
+
+/*----------------------------------------------------------------------------*/
+
 #container{
     position: fixed;
     top: 10%;
-    height: 80%;
-    left: 25%;
-    width: 50%;
+/*    height: 80%;*/
+    height: 1000px;
+    left: 28%;
+    width: 40%;
     background-color: white;
 }
 
@@ -24,3 +62,5 @@ ol, p{
     margin-left: auto;
     margin-right: auto;
 }
+
+/*----------------------------------------------------------------------------*/
