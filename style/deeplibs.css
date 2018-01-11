@@ -19,9 +19,11 @@ a:link{
 /*----------------------------------------------------------------------------*/
 
 header{
-    padding: 1em;
+    padding: .5em;
     clear: left;
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 nav ul{
