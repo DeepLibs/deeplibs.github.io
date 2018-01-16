@@ -14,43 +14,123 @@
 </head>
 
 <body>
-    <header>
-        <a href="../index.html" style="color: white; font-size:20px;">DeepLibs</a>
-    </header>
+<header>
+    <a href="../index.html" style="color: white; font-size:20px;"><b>DeepLibs</b></a>
+</header>
 
-    <article>
-        <h1>Perceptron</h1>
+<article>
+    <h1>Perceptron</h1>
+    <br>
 
-        <br>
 
-        <p>
-        The perceptron tries to mathematicaly represent a neuron.
-        Nowadays we know it is far from representing a real neuron but neural
-        networks are built with a combination of several perceptrons
-        (and much more).
-        </p>
+<p>
+The perceptron tries to mathematically represent a neuron.
+Nowadays we know it is far from representing a real neuron but neural
+networks are built with a combination of several perceptrons
+(and much more).
+</p>
 
-        <p>
-        Anyway, to completely understand neural networks it is important to
-        study the perceptron and understand what they represent.
-        </p>
 
-        <p>
-        The perceptron is defined according to the following function:
-        $$ f(x) = \sum_{i=1}^{N} { w_{i} x_{i} } $$
-        It represents the summation of \(N\) inputs \(x\) multiplied by \(N\) weights \(w\).
-        The perceptron is usualy represented by the figure below.
-        </p>
+<p>
+Anyway, to completely understand neural networks it is important to
+study the perceptron and understand what they represent.
+</p>
 
-        <figure>
-            <img src="../figures/perceptron.png" align="middle"
-            alt="perceptron representation" width="500" height="250" style="padding: 10px">
+
+<p>
+The perceptron is defined according to the following function:
+$$ f(x) = \sum_{i=1}^{N} { w_{i} x_{i} } $$
+$$ f(x) = w_{1} x_{1} + w_{2} x_{2} + ... + w_{N} x_{N} $$
+
+It represents the summation of \(N\) inputs \(x\) multiplied by \(N\) weights \(w\).
+The perceptron is usualy represented by the block diagram below.
+</p>
+
+
+<figure>
+    <img src="../figures/perceptron.png" align="middle"
+    alt="perceptron representation" width="500" height="250" style="padding: 10px">
 <!--            <figcaption align="middle">Perceptron block diagram.</figcaption>-->
-        </figure>
+</figure>
 
-    </article>
+<!--        <p>-->
+<!--From this figure we can compare the mathematical model and a real neuron.-->
+<!--The weights could be considered dendrites, the summation the soma-->
+<!--and the activation function could represent the axon. But no, a real-->
+<!--neuron ...-->
+<!--READ about this and find references-->
+<!--        </p>-->
 
-    <footer><br>Copyright &copy; Thomio Watanabe</footer>
+
+<p>
+It can also be represented with a bias when one of its input is equal to one.
+It is just important to note that the bias is a weight like any other.
+</p>
+
+
+<figure>
+    <img src="../figures/perceptron_bias.png" align="middle"
+    alt="perceptron representation with bias " width="500" height="260" style="padding: 10px">
+</figure>
+
+
+<p>
+The perceptron is usually followed by an activation funtion that adds
+non-linearity to the whole model. Real world problems are non-linear and
+almost all deep neural networks make use of activation funtions.
+A common activation function is the ReLU, short for Rectified Linear Unit,
+which zeroes negative outputs from the perceptron.
+$$ g(f(x)) = max(0,f(x)) $$
+</p>
+
+
+<figure>
+    <img src="../figures/perceptron_activation.png" align="middle"
+    alt="perceptron and activation function " width="600" height="250" style="padding: 10px">
+</figure>
+
+
+<p>
+But how is this model useful?
+The trick is that we can adjust the weights to match specific outputs, process
+denominated as training process.
+How these weights are adjusted depend on loss functions also known as target or
+error functions.
+<!--In turn, the loss functions like any other mathematical function can represent-->
+<!--anything.-->
+<!--So we can use the same function to identify cats, dogs, or people in images.-->
+To illustrate how the weights are adjusted lets create a toy problem for linear
+regression.
+</p>
+
+
+<p>
+In this case we are not making use of activation functions.
+</p>
+
+
+<p>
+Imagine we have a perceptron with one input and bias. Its equation
+is reduced to:
+</p>
+$$ f(x) = { w x + b } $$
+
+
+<p>
+This equation can represent any line in a \( (f, x) \) cartesian coordinate
+system but we want to adjust this function to a set of points.
+In other words, we need to find the weights \( w, b \) that fit the data.
+</p>
+
+
+<p>
+We can generate a set of data with normal distribution around a line.
+</p>
+
+
+</article>
+
+<footer><br>Copyright &copy; Thomio Watanabe</footer>
 
 </body>
 
