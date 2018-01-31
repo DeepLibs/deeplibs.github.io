@@ -83,11 +83,17 @@ which zeroes negative outputs from the perceptron.
 $$ g(f(x)) = max(0,f(x)) $$
 </p>
 
-
 <figure>
     <img src="../figures/perceptron_activation.png" align="middle"
     alt="perceptron and activation function " width="600" height="250" style="padding: 10px">
 </figure>
+
+
+The rectifier function could also be rewriten with the <b>unit step function</b>  \( u(x) \).
+From this perspective, the ReLU would be equivalent to an ideal diode.
+
+$$ g(f(x)) = f(x) . u(f(x)) $$
+
 
 
 <p>
