@@ -6,6 +6,7 @@ body{
 
 ol, p{
     font-size: large
+    text-align: justify
 }
 
 h1{
@@ -37,6 +38,7 @@ article{
     margin-right: 30%;
     padding: 1em;
     overflow: hidden;
+    text-align: justify
 }
 
 footer{

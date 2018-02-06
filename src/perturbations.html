@@ -30,16 +30,46 @@ in Artificial Intelligence.
 </p>
 
 <p>
-<b>Perturbations</b> are one of the biggest threat to AI.
+<b>Perturbations</b> are one of the biggest threats to AI.
 Basically a perturbation is any data or modification made in the input data with
-the sole purpose is to jeopardise an expected outcome.
+the sole purpose is to misclassify an input.
 Perturbations can be subdivided in adversarial or universal.
+</p>
+
+<p>
+Adversarial examples were introduced by (Szegedy, et al., 2013) when these
+researchers were investigating neural networks properties.
+Adversarial examples are input data modified with small perturbations especially
+designed to trick an AI model to output incorrect answers with high confidence.
+For instance, Figure 1 demonstrates a perturbation signal that was added
+to misclassify a panda as a gibbon.
+</p>
+
+<figure>
+    <img src="../figures/adversarial_example.png" align="middle"
+    alt="Adversarial example" width="520" height="210" style="padding-left: 1.5cm">
+    <figcaption align="middle"> <b>Figure 1</b> - Adversarial example trained
+    with ImageNet and applied to GoogLeNet. Image obtained from (Goodfellow et al. 2015). </figcaption>
+</figure>
+
+
+<p>
+These modifications are in most cases indistinguishable to the human eye.
+However they can easily trick state of the art models.
+The problem is more severe than it seems.
+Anyone with a basic knowledge in deep learning is able to create adversarial
+examples.
+There are also several researches to create defenses on AI models but so far
+these defenses do not adapt to the type of the attack and can be easily defeated.
 </p>
 
 
 <p>
-These problems rise because we rely on datasets to train an AI model.
-And of course, it is impossible to create a dataset that contemplates every
+<!--These problems rise because we rely on datasets to train an AI model.-->
+There are several reasons for the existence of this problem.
+Szegedy, et al. points out that these perturbations have a extremely low
+probability to exist on the dataset.
+It is impossible to create a dataset that contemplates every
 single possible entry a model can receive.
 If we had a better understanding of deep neural networks we could create
 efficient countermeasures to perturbations.
@@ -49,15 +79,22 @@ efficient countermeasures to perturbations.
 
 <p>
 A fun fact is that it is not only possible to fool machines but many projects 
-(or researches) are being explored to fool humans.
+are being explored to fool humans.
 And it seems to be much easier to fool a human. 
-For example: there is one research that can reproduce the voice of anyone 
-including Barack Obama, and another "research" that can replace the face of 
-anyone in any video.
+For example: there are researches to reproduce someone else's voice and
+researches that can replace the face of anyone in any video.
 <!--https://tecnoblog.net/233435/reddit-banindo-deepfake/-->
 These tasks are not new but the results obtained by the use of AI are
 impressive.
 </p>
+
+
+<br>
+
+<ol>
+  <li>Szegedy, Christian, et al. "Intriguing properties of neural networks." arXiv preprint arXiv:1312.6199 (2013).
+  <li>Goodfellow, Ian J., Jonathon Shlens, and Christian Szegedy. "Explaining and harnessing adversarial examples." ICLR (2015).
+</ol>
 
 
 </article>
