@@ -49,8 +49,8 @@ nav ul{
 }
 
 article{
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 768px;
+    margin: auto;
     padding: 1em;
     overflow: hidden;
     text-align: justify
