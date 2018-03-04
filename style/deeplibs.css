@@ -1,27 +1,20 @@
 
 body{
     background-color: white;
-    font-size: large
-}
-
-ol{
-    font-size: large
-}
-
-p{
-    font-size: large
-    text-align: justify
-}
-
-h1{
-    font-size: 2em;
+    font-size: large;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.6;
 }
 
 a:link{
-  text-decoration: none;
-  color: blue;
+    text-decoration: none;
+    color: blue;
 }
 
+/*Nested list counter*/
+OL { counter-reset: item }
+LI { display: block }
+LI:before { content: counters(item, ".") ". "; counter-increment: item }
 
 /*Table*/
 table, th, td {
@@ -42,11 +35,6 @@ header{
     background-color: black;
 }
 
-nav ul{
-    list-style-type: none;
-    padding: 0;
-}
-
 article{
     width: 768px;
     margin: auto;
@@ -62,16 +50,6 @@ footer{
 }
 
 /*----------------------------------------------------------------------------*/
-
-#container{
-    position: fixed;
-    top: 10%;
-/*    height: 80%;*/
-    height: 1000px;
-    left: 28%;
-    width: 40%;
-    background-color: white;
-}
 
 #copyright {
     position: fixed;
