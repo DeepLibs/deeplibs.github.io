@@ -187,7 +187,9 @@ In other words we want to find a local minimum.
 <p>
 For the perceptron we want to adjust the neuron weights that minimize the MSE.
 We consider each perceptron weights an independent variable and we compute the
- derivative of the MSE regarding the perceptron weights.
+ derivative of the MSE regarding the weights.
+It is interesting to keep in mind that the loss function variables are the
+ network weights not the network inputs.
 </p>
 $$
 h(x) = { w x + b }
