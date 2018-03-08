@@ -28,18 +28,22 @@
 While we still really (really) far from creating skynet and the terminator we
 should keep in mind real problems that rises with the current state of the art
 in Artificial Intelligence.
+Besides being used for malicious purposes deep learning models can also be
+ easily hacked.
 </p>
 
 <p>
 <b>Perturbations</b> are one of the biggest threats to AI.
-Basically a perturbation is any data or modification made in the input data with
+Basically a perturbation is any modification made in the input data with
 the purpose to generate wrong results.
 Perturbations can be subdivided in adversarial or universal.
 </p>
 
 <p>
-Adversarial examples were introduced by (Szegedy, et al., 2013) when these
-researchers were investigating neural networks properties.
+Adversarial examples were introduced by Szegedy, et al., 2013 in
+ <q>Intriguing properties of neural networks</q>
+[<a href="https://arxiv.org/abs/1312.6199">arxiv</a>] when these researchers
+ were investigating neural networks properties.
 Adversarial examples are input data modified with small perturbations especially
 designed to trick an AI model to output incorrect answers with high confidence.
 For example, Figure 1 demonstrates a perturbation signal that was added
@@ -50,7 +54,10 @@ to misclassify a panda as a gibbon.
     <img src="../figures/adversarial_example.png" align="middle"
     alt="Adversarial example" width="520" height="210" style="padding-left: 1.5cm">
     <figcaption align="middle"> <b>Figure 1</b> - Adversarial example trained
-    with ImageNet and applied to GoogLeNet. Image obtained from (Goodfellow et al. 2015). </figcaption>
+    with GoogLeNet and ImageNet. Image obtained from <q>Explaining and
+    harnessing adversarial examples</q>, Goodfellow et al. 2015,
+    [<a href="https://arxiv.org/abs/1412.6572">arxiv</a>].
+    </figcaption>
 </figure>
 
 
@@ -85,25 +92,17 @@ efficient countermeasures to perturbations.
 </p>
 
 
-
 <p>
 A fun fact is that it is not only possible to fool machines but many projects 
-are being explored to fool humans.
-And it seems to be much easier to fool a human. 
+are being explored to fool humans, see
+ <q>Adversarial Examples that Fool both Human and Computer Vision</q>,
+ Elsayed et al. 2018, [<a href="https://arxiv.org/abs/1802.08195">arxiv</a>].
 For instance, there are researches to reproduce someone else's voice and
 researches to replace faces.
 These researches among others in AI are very polemic.
-<!--https://tecnoblog.net/233435/reddit-banindo-deepfake/-->
 These tasks are not new but the results obtained with the use of AI are
 impressive.
 </p>
-
-<br>
-<p>References</p>
-<ol>
-  <li>Szegedy, Christian, et al. "Intriguing properties of neural networks." arXiv preprint arXiv:1312.6199 (2013).
-  <li>Goodfellow, Ian J., Jonathon Shlens, and Christian Szegedy. "Explaining and harnessing adversarial examples." ICLR (2015).
-</ol>
 
 
 </article>
